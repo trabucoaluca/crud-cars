@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>CRUD</title>
+</head>
+<body>
+   <div class="container-form">
+       <form id="form-car" onsubmit="event.preventDefault(), addCar()" action="/cars.php">
+            <div class="container-input">
+                <label for="image">URL Image</label>
+                <input type="url" id="image" placeholder="URL Image">
+            </div>
+            <div class="container-input">
+                <label for="brand">Brand</label>
+                <input type="text" id="brand" placeholder="Brand">
+            </div>
+            <div class="container-input">
+                <label for="model">Model</label>
+                <input type="text" id="model" placeholder="Model">
+            </div>
+            <div class="container-input">
+                <label for="color">Color</label>
+                <input type="text" id="color" placeholder="Color">
+            </div>
+            <div class="container-input">
+                <label for="year">Year</label>
+                <input type="text" id="year" placeholder="Year">
+            </div>
+            <div class="container-input">
+                <label for="cost">Cost</label>
+                <input type="text" id="cost" placeholder="Cost">
+            </div>
+            <div class="button">
+                <button type="submit" class="button-add">Add</button>
+            </div>
+       </form>
+   </div>
+
+   <div class="container-table">
+       <table class="table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Color</th>
+                    <th>Year</th>
+                    <th>Cost</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="container-cars">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./script2.js"></script>
+</body>
+</html>
